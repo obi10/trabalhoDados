@@ -1,0 +1,219 @@
+2018-10-03 18:41:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TASKS (ID VARCHAR(20) NOT NULL, NAME VARCHAR(100) NULL, PRIMARY KEY(ID)) AS SELECT ID, NAME FROM CSVREAD(.[*]/TABLES/TASK.CSV) "; expected "INDEX, ), NOT, EXISTS, INTERSECTS, SELECT, FROM, WITH"; SQL statement:
+CREATE TABLE IF NOT EXISTS Tasks (id VARCHAR(20) NOT NULL, name VARCHAR(100) NULL, PRIMARY KEY(id)) AS SELECT id, name FROM CSVREAD(./tables/task.csv) [42001-197]
+2018-10-03 18:41:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DEPENDENCY (BEFORE VARCHAR(20) NOT NULL, AFTER VARCHAR(20) NOT NULL, TIME INTEGER NOT NULL, PRIMARY KEY(BEFORE, AFTER), FOREIGN KEY(BEFORE) REFERENCES TASKS(ID), FOREIGN KEY(AFTER) REFERENCES TASKS(ID)) AS SELECT ID, NAME FROM CSVREAD(.[*]/TABLES/DEPENDENCY.CSV) "; expected "INDEX, ), NOT, EXISTS, INTERSECTS, SELECT, FROM, WITH"; SQL statement:
+CREATE TABLE IF NOT EXISTS Dependency (before VARCHAR(20) NOT NULL, after VARCHAR(20) NOT NULL, time INTEGER NOT NULL, PRIMARY KEY(before, after), FOREIGN KEY(before) REFERENCES Tasks(id), FOREIGN KEY(after) REFERENCES Tasks(id)) AS SELECT id, name FROM CSVREAD(./tables/dependency.csv) [42001-197]
+2018-10-03 18:44:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TASKS (ID VARCHAR(20) NOT NULL, NAME VARCHAR(100) NULL, PRIMARY KEY(ID)) AS SELECT ID, NAME FROM CSVREAD(JDBC:[*]H2:./TABLES/TASK.CSV) "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS Tasks (id VARCHAR(20) NOT NULL, name VARCHAR(100) NULL, PRIMARY KEY(id)) AS SELECT id, name FROM CSVREAD(jdbc:h2:./tables/task.csv) [42001-197]
+2018-10-03 18:44:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DEPENDENCY (BEFORE VARCHAR(20) NOT NULL, AFTER VARCHAR(20) NOT NULL, TIME INTEGER NOT NULL, PRIMARY KEY(BEFORE, AFTER), FOREIGN KEY(BEFORE) REFERENCES TASKS(ID), FOREIGN KEY(AFTER) REFERENCES TASKS(ID)) AS SELECT ID, NAME FROM CSVREAD(JDBC:[*]H2:./TABLES/DEPENDENCY.CSV) "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS Dependency (before VARCHAR(20) NOT NULL, after VARCHAR(20) NOT NULL, time INTEGER NOT NULL, PRIMARY KEY(before, after), FOREIGN KEY(before) REFERENCES Tasks(id), FOREIGN KEY(after) REFERENCES Tasks(id)) AS SELECT id, name FROM CSVREAD(jdbc:h2:./tables/dependency.csv) [42001-197]
+2018-10-03 18:46:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TASKS (ID VARCHAR(20) NOT NULL, NAME VARCHAR(100) NULL, PRIMARY KEY(ID)) AS SELECT ID, NAME FROM CSVREAD(JDBC:[*]H2:./TABLES/TASK.CSV); "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS Tasks (id VARCHAR(20) NOT NULL, name VARCHAR(100) NULL, PRIMARY KEY(id)) AS SELECT id, name FROM CSVREAD(jdbc:h2:./tables/task.csv); [42001-197]
+2018-10-03 18:46:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DEPENDENCY (BEFORE VARCHAR(20) NOT NULL, AFTER VARCHAR(20) NOT NULL, TIME INTEGER NOT NULL, PRIMARY KEY(BEFORE, AFTER), FOREIGN KEY(BEFORE) REFERENCES TASKS(ID), FOREIGN KEY(AFTER) REFERENCES TASKS(ID)) AS SELECT BEFORE, AFTER, TIME FROM CSVREAD(JDBC:[*]H2:./TABLES/DEPENDENCY.CSV); "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS Dependency (before VARCHAR(20) NOT NULL, after VARCHAR(20) NOT NULL, time INTEGER NOT NULL, PRIMARY KEY(before, after), FOREIGN KEY(before) REFERENCES Tasks(id), FOREIGN KEY(after) REFERENCES Tasks(id)) AS SELECT before, after, time FROM CSVREAD(jdbc:h2:./tables/dependency.csv); [42001-197]
+2018-10-03 18:47:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: IO Exception: "IOException reading jdbc:h2:./tables/task.csv"; SQL statement:
+CREATE TABLE IF NOT EXISTS Tasks (id VARCHAR(20) NOT NULL, name VARCHAR(100) NULL, PRIMARY KEY(id)) AS SELECT id, name FROM CSVREAD('jdbc:h2:./tables/task.csv'); [90028-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:590)
+	at org.h2.tools.Csv.read(Csv.java:197)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2535)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:65)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1422)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2138)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2287)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2133)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1946)
+	at org.h2.command.Parser.parseSelect(Parser.java:1919)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6644)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.obi10.AppListaCidades.crearTabelaTask(AppListaCidades.java:46)
+	at com.obi10.Main.main(Main.java:11)
+Caused by: java.net.MalformedURLException: unknown protocol: jdbc
+	at java.net.URL.<init>(URL.java:600)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:315)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:221)
+	at org.h2.tools.Csv.initRead(Csv.java:316)
+	at org.h2.tools.Csv.readResultSet(Csv.java:219)
+	at org.h2.tools.Csv.read(Csv.java:195)
+	... 21 more
+2018-10-03 18:47:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: IO Exception: "IOException reading jdbc:h2:./tables/dependency.csv"; SQL statement:
+CREATE TABLE IF NOT EXISTS Dependency (before VARCHAR(20) NOT NULL, after VARCHAR(20) NOT NULL, time INTEGER NOT NULL, PRIMARY KEY(before, after), FOREIGN KEY(before) REFERENCES Tasks(id), FOREIGN KEY(after) REFERENCES Tasks(id)) AS SELECT before, after, time FROM CSVREAD('jdbc:h2:./tables/dependency.csv'); [90028-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:590)
+	at org.h2.tools.Csv.read(Csv.java:197)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2535)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:65)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1422)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2138)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2287)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2133)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1946)
+	at org.h2.command.Parser.parseSelect(Parser.java:1919)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6644)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.obi10.AppListaCidades.crearTabelaDependency(AppListaCidades.java:67)
+	at com.obi10.Main.main(Main.java:12)
+Caused by: java.net.MalformedURLException: unknown protocol: jdbc
+	at java.net.URL.<init>(URL.java:600)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:315)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:221)
+	at org.h2.tools.Csv.initRead(Csv.java:316)
+	at org.h2.tools.Csv.readResultSet(Csv.java:219)
+	at org.h2.tools.Csv.read(Csv.java:195)
+	... 21 more
+2018-10-03 18:48:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: IO Exception: "IOException reading jdbc:h2:./tables/dependency.csv"; SQL statement:
+CREATE TABLE IF NOT EXISTS Dependency (before VARCHAR(20) NOT NULL, after VARCHAR(20) NOT NULL, time INTEGER NOT NULL, PRIMARY KEY(before, after), FOREIGN KEY(before) REFERENCES Tasks(id), FOREIGN KEY(after) REFERENCES Tasks(id)) AS SELECT before, after, time FROM CSVREAD('jdbc:h2:./tables/dependency.csv'); [90028-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:590)
+	at org.h2.tools.Csv.read(Csv.java:197)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2535)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:65)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1422)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2138)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2287)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2133)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1946)
+	at org.h2.command.Parser.parseSelect(Parser.java:1919)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6644)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.obi10.AppListaCidades.crearTabelaDependency(AppListaCidades.java:67)
+	at com.obi10.Main.main(Main.java:12)
+Caused by: java.net.MalformedURLException: unknown protocol: jdbc
+	at java.net.URL.<init>(URL.java:600)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:315)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:221)
+	at org.h2.tools.Csv.initRead(Csv.java:316)
+	at org.h2.tools.Csv.readResultSet(Csv.java:219)
+	at org.h2.tools.Csv.read(Csv.java:195)
+	... 21 more
+2018-10-03 19:00:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM TASKS/[*]NSELECT * FROM DEPENDENCY "; SQL statement:
+SELECT * FROM Tasks/nSELECT * FROM Dependency [42000-197]
+2018-10-08 13:16:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: IO Exception: "IOException reading ./tables/task.csv"; SQL statement:
+CREATE TABLE IF NOT EXISTS Tasks (id VARCHAR(20) NOT NULL, name VARCHAR(100) NULL, PRIMARY KEY(id)) AS SELECT id, name FROM CSVREAD('./tables/task.csv'); [90028-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:590)
+	at org.h2.tools.Csv.read(Csv.java:197)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2535)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:65)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1422)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2138)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2287)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2133)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1946)
+	at org.h2.command.Parser.parseSelect(Parser.java:1919)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6644)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at controller.ControllerApp.crearTabelaTask(ControllerApp.java:72)
+	at view.Main.main(Main.java:14)
+Caused by: java.io.FileNotFoundException: ./tables/task.csv (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:318)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:221)
+	at org.h2.tools.Csv.initRead(Csv.java:316)
+	at org.h2.tools.Csv.readResultSet(Csv.java:219)
+	at org.h2.tools.Csv.read(Csv.java:195)
+	... 21 more
+2018-10-08 13:16:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: IO Exception: "IOException reading ./tables/dependency.csv"; SQL statement:
+CREATE TABLE IF NOT EXISTS Dependency (before VARCHAR(20) NOT NULL, after VARCHAR(20) NOT NULL, time INTEGER NOT NULL, PRIMARY KEY(before, after), FOREIGN KEY(before) REFERENCES Tasks(id), FOREIGN KEY(after) REFERENCES Tasks(id)) AS SELECT before, after, time FROM CSVREAD('./tables/dependency.csv'); [90028-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:590)
+	at org.h2.tools.Csv.read(Csv.java:197)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2535)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:65)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1422)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2138)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2287)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2133)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1946)
+	at org.h2.command.Parser.parseSelect(Parser.java:1919)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6644)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at controller.ControllerApp.crearTabelaDependency(ControllerApp.java:93)
+	at view.Main.main(Main.java:15)
+Caused by: java.io.FileNotFoundException: ./tables/dependency.csv (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:318)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:221)
+	at org.h2.tools.Csv.initRead(Csv.java:316)
+	at org.h2.tools.Csv.readResultSet(Csv.java:219)
+	at org.h2.tools.Csv.read(Csv.java:195)
+	... 21 more
+2018-10-08 13:16:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASKS" not found; SQL statement:
+SELECT * FROM Tasks [42102-197]
+2018-10-08 13:16:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEPENDENCY" not found; SQL statement:
+SELECT * FROM Dependency [42102-197]
