@@ -1,4 +1,4 @@
-id,tipo,altura(cm),peso(kg),sexo,idade
+id,tipo,altura,peso,sexo,idade
 med1P1,A,178,65,M,50
 med1P2,A,169,84,M,46
 med1P3,C,98,52,F,8
