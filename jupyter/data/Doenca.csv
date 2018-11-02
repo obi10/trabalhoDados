@@ -1,8 +1,8 @@
 id,nome ,categoria
-D1,Insuficiência renal normal,Renal
-D2,Insuficiência renal média,Renal
-D3,Insuficiência renal moderada,Renal
-D4,Insuficiência renal grave,Renal
+D1,Insuficiencia renal normal,Renal
+D2,Insuficiencia renal media,Renal
+D3,Insuficiencia renal moderada,Renal
+D4,Insuficiencia renal grave,Renal
 D5,Pressao alta,Sanguíneas
 D6,Faringite,Infecciosa
 D7,Esofagite,Sistema digestivo
