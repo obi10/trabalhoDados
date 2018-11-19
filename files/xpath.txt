@@ -1,0 +1,63 @@
+--https://www.online-toolz.com/tools/xpath-editor.php
+
+--XML
+<fichario>
+	<individuo nome="Asdrubal da Silva">
+		<idade>15</idade>
+		<genero>masculino</genero>
+	</individuo>
+	<individuo nome="Quincas Borba">
+		<idade>33</idade>
+		<genero>masculino</genero>
+	</individuo>
+	<individuo nome="Doriana Margarina">
+		<idade>42</idade>
+		<genero>feminino</genero>
+	</individuo>
+</fichario>
+
+--XPATH Query
+--retornar todos os individuos
+/fichario/individuo
+//individuo
+
+--retornar os nomes dos individuos
+//individuo/@nome
+
+--retornar as idades de todos os elementos
+/fichario/*/idade
+
+--filtros
+--retornar o segundo individuo
+//individuo[2]
+
+--retornar o ultimo individuo
+//individuo[last()]
+
+--retornar a idade do individuo que se chama 'Quincas Borba'
+//individuo[@nome="Quincas Borba"]/idade
+
+--retornar a resultado da anterior consulta em texto
+//individuo[@nome="Quincas Borba"]/idade/text()
+
+--retornar os nomes dos individuos que tem mais de 20 anos
+//individuo[idade>20]/@nome
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

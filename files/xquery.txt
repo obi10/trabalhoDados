@@ -1,0 +1,133 @@
+--http://try.zorba.io/
+
+xquery version "1.0";
+let $message := 'Dinotopia'
+return
+<livro>Título: {$message}</livro>
+
+xquery version "1.0";
+let $message := 'Dinotopia'
+return data($message)
+
+
+--concatenacao
+xquery version "1.0";
+let $message := 'Dinotopia'
+return
+<livro>{data('Título:'), $message}</livro>
+
+xquery version "1.0";
+let $message := 'Dinotopia'
+return
+<livro>{concat('Título: ', $message)}</livro>
+
+--let/return
+let $fichariodoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/fichario.xml')
+return $fichariodoc/fichario
+
+--xquery/xpath
+let $fichariodoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/fichario.xml')
+return $fichariodoc//individuo[idade>20][genero="masculino"]
+
+--xquery/count()
+let $fichariodoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/fichario.xml')
+return count($fichariodoc//individuo)
+
+--xquery/for
+let $fichariodoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/fichario.xml')
+for $i in ($fichariodoc//individuo)
+return $i/idade
+
+--xquery/where
+let $fichariodoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/fichario.xml')
+for $i in ($fichariodoc//individuo)
+where $i[idade>17]
+return $i
+
+let $fichariodoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/fichario.xml')
+for $i in ($fichariodoc//individuo[idade>17])
+return $i
+
+--EMBEDDED
+--posts de qualquer nivel hierarquico
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-embedded.xml')
+
+return $postsdoc//POST
+
+--quantos reposts diretos e indiretos tem cada post original
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-embedded.xml')
+
+for $i in ($postsdoc/FEED/POST)
+let $qdireto := count($i/POST)
+let $qindireto := count($i//POST) - $qdireto
+return ($qdireto, $qindireto)
+
+--EMBEDDED 1:1
+--considerando o exercicio ao contrario, encontrar os posts originais
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-1-1.xml')
+
+return $postsdoc//POST[not(POST)]
+
+--quantos ancestrais tem cada no
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-1-1.xml')
+
+for $p in ($postsdoc//POST[not(POST)])
+return count($p/ancestor::*)-1
+
+--if/diferenciando <post> de <repost>
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-1-1.xml')
+
+for $p in ($postsdoc//POST)
+return if ($p[not(POST)])
+	then <POST>{data($p/@id)}</POST>
+	else <REPOST>{data($p/@id)}</REPOST>
+
+--CRUZADA
+--join
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-cruzada.xml')
+for $p1 in ($postsdoc//POST),
+    $p2 in ($postsdoc//POST)
+where $p1/@ref_post = $p2/@id
+return {concat('Post: ', data($p1/@id), ', Repost: ', data($p2/@id))}
+
+--if/diferenciando <post> de <repost>
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-cruzada.xml')
+
+for $p in ($postsdoc//POST)
+return if ($p[@ref_post])
+	then <REPOST>{data($p/@id)}</REPOST>
+	else <POST>{data($p/@id)}</POST>
+
+--transform EMBEDDED 1:1 a CRUZADA
+let $postsdoc := doc('http://www.ic.unicamp.br/~santanch/teaching/db/xml/post-rede-social-1-1.xml')
+return 
+<FEED>
+{
+  for $p in ($postsdoc//POST) return
+  if ($p[not(POST)]) then
+    <POST id="{data($p/@id)}" data="{data($p/@data)}"><TEXTO>{data($p/TEXTO/text())}</TEXTO></POST>
+  else <POST id="{data($p/@id)}" data="{data($p/@data)}" ref_post="{data($p/POST/@id)}"><TEXTO>{data($p/TEXTO/text())}</TEXTO></POST>
+}
+</FEED>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

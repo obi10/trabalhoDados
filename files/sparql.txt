@@ -1,0 +1,61 @@
+#quem e o autor de the tin drum
+select ?aut
+  where {dbr:The_Tin_Drum dbo:author ?aut}
+
+#quais os livros escritos por Gunter Grass
+select ?livro
+  where {?livro dbo:author dbr:Günter_Grass}
+
+#quais os escritores
+select distinct ?wri
+  where {?wri rdf:type dbo:Writer}
+  limit 20
+
+select ?illus
+  where {?illus dbo:illustrator dbr:Günter_Grass}
+
+#entidades da lingua alemao
+select ?entidade
+  where {?entidade dbo:language dbr:German_language}
+  limit 20
+
+#escritores de lingua alemao
+select ?wri
+  where {
+	?wri rdf:type dbo:Writer.
+	?wri dbo:language dbr:German_language}
+  limit 20
+
+#escritores traduzidos por Ralph Manheim
+select ?aut
+  where {
+	?work dbo:translator dbr:Ralph_Manheim.
+	?work dbo:author ?aut.
+	?aut rdf:type dbo:Writer}
+
+#cidades disponiveis na DBPedia
+select distinct ?cid
+  where {{?cid rdf:type dbo:City} UNION {?cid rdf:type yago:City108524735}}
+  limit 20
+
+#cidades administradas pelo partido socialista
+select distinct ?cid
+  where {
+  ?cid dbp:party dbr:Socialist_Party.
+  {?cid rdf:type dbo:City} UNION {?cid rdf:type yago:City108524735}}
+  limit 20
+
+#prefeito de Paris
+select ?mayor
+  where {dbr:Paris dbo:mayor ?mayor}
+
+#cidades administradas pelo um prefeito que nasceu em Paris
+select ?cid
+  where {
+  ?mayor dbo:birthPlace dbr:Paris.
+  ?cid dbo:mayor ?mayor}
+
+#plantas que tem flores
+select ?planta
+  where {?planta dct:subject dbc:Flowers}
+  limit 20
