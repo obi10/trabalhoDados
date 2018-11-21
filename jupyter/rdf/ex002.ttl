@@ -1,0 +1,9 @@
+# filename: ex002.ttl
+
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+sn:emp1 vcard:given-name "Heidi" .
+sn:emp1 vcard:family-name "Smith" .
+
+sn:emp2 vcard:given-name "John" .
+sn:emp2 vcard:family-name "Smith" .
