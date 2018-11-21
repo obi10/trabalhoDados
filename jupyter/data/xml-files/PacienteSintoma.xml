@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PacienteSintomas>
+  <PacienteSintoma>
+    <idPaciente>1</idPaciente>
+    <sintoma>Dor de estômago</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>2</idPaciente>
+    <sintoma>Dor peito</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>3</idPaciente>
+    <sintoma>Náusea</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>4</idPaciente>
+    <sintoma>Vômito</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>5</idPaciente>
+    <sintoma>Dor garganta</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>6</idPaciente>
+    <sintoma>Febre baixa</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>7</idPaciente>
+    <sintoma>Dor ao engolir</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>8</idPaciente>
+    <sintoma>Dor de estômago</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>9</idPaciente>
+    <sintoma>Dor garganta</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>10</idPaciente>
+    <sintoma>Vômito</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>11</idPaciente>
+    <sintoma>Falta de ar</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>12</idPaciente>
+    <sintoma>Mal-estar</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>13</idPaciente>
+    <sintoma>Irritação garganta</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>14</idPaciente>
+    <sintoma>Dor ao respirar</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>15</idPaciente>
+    <sintoma>Febre</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>16</idPaciente>
+    <sintoma>Dor garganta</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>17</idPaciente>
+    <sintoma>Dor de estômago</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>18</idPaciente>
+    <sintoma>Náusea</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>19</idPaciente>
+    <sintoma>Vômito</sintoma>
+  </PacienteSintoma>
+  <PacienteSintoma>
+    <idPaciente>20</idPaciente>
+    <sintoma>Febre</sintoma>
+  </PacienteSintoma>
+</PacienteSintomas>

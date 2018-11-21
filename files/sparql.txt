@@ -1,3 +1,27 @@
+RDF
+- RDF databases estao desenhados especificamente para dados em formas de 'triplos'.
+- RDF stores support information processing in applications that connect multiple data sources.
+- RDF framework is designed to enable information sharing without loss of meaning.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#link de referencia: https://www.w3.org/2007/03/VLDB/
+
 #quem e o autor de the tin drum
 select ?aut
   where {dbr:The_Tin_Drum dbo:author ?aut}
@@ -38,11 +62,18 @@ select distinct ?cid
   where {{?cid rdf:type dbo:City} UNION {?cid rdf:type yago:City108524735}}
   limit 20
 
-#cidades administradas pelo partido socialista
 select distinct ?cid
   where {
-  ?cid dbp:party dbr:Socialist_Party.
-  {?cid rdf:type dbo:City} UNION {?cid rdf:type yago:City108524735}}
+    ?cid rdf:type yago:City108524735.
+    ?cid dbo:country dbr:France.
+    ?cid dbo:mayor dbr:Anne_Hidalgo}
+  limit 20
+
+#cidades administradas pelo partido socialista de Francia
+select distinct ?cid
+  where {
+    {?cid rdf:type dbo:City} UNION {?cid rdf:type yago:City108524735}.
+    ?cid dbp:party <http://dbpedia.org/resource/Socialist_Party_(France)>}
   limit 20
 
 #prefeito de Paris
@@ -52,8 +83,10 @@ select ?mayor
 #cidades administradas pelo um prefeito que nasceu em Paris
 select ?cid
   where {
-  ?mayor dbo:birthPlace dbr:Paris.
-  ?cid dbo:mayor ?mayor}
+    {?cid rdf:type dbo:City} UNION {?cid rdf:type yago:City108524735}.
+    ?mayor dbo:birthPlace dbr:Paris.
+    ?cid dbo:mayor ?mayor}
+  limit 20
 
 #plantas que tem flores
 select ?planta

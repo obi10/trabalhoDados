@@ -1,0 +1,25 @@
+id,nome,categoria
+D1,Insuficiencia renal normal,Renal
+D2,Insuficiencia renal media,Renal
+D3,Insuficiencia renal moderada,Renal
+D4,Insuficiencia renal grave,Renal
+D5,Pressao alta,Sanguíneas
+D6,Faringite,Infecciosa
+D7,Esofagite,Sistema digestivo
+D8,Gastrite,Sistema digestivo
+D9,Gripe,Respiratórias
+D10,Tuberculose,Respiratórias
+D11,Pneumonia,Respiratórias
+D12,Constipação,Respiratórias
+D13,Rinite,Respiratórias
+D14,Sinusite,Respiratórias
+D15,Anemia,Sanguíneas
+D16,Malária,Sanguíneas
+D17,Cólera,Infecciosa
+D18,Amebíase,Infecciosa
+D19,Giardíase,Infecciosa
+D20,Febre tifoide,Infecciosa
+D21,Salmonella,Infecciosa
+D22,Sarcocistose,Infecciosa
+D23,Balantidíase,Infecciosa
+D24,Isosporíase,Infecciosa
