@@ -1,445 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContaMedico>
-  <Medico>
-    <username>abc</username>
-    <senha>123</senha>
+<ContasMedico>
+  <ContaMedico>
+    <username>med1</username>
+    <senha>med1</senha>
     <nome>joao</nome>
     <sobrenome>augusto</sobrenome>
     <email>j@gmail.com</email>
     <numCRM>12548</numCRM>
+    <cidadeFederativa>BA</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abd</username>
-    <senha>124</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med2</username>
+    <senha>med2</senha>
     <nome>joao</nome>
     <sobrenome>pereira</sobrenome>
     <email>j.p@gmail.com</email>
     <numCRM>11245</numCRM>
+    <cidadeFederativa>CE</cidadeFederativa>
     <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abe</username>
-    <senha>125</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med3</username>
+    <senha>med3</senha>
     <nome>junior</nome>
     <sobrenome>maldivas</sobrenome>
     <email>j.v@gmail.com</email>
     <numCRM>13584</numCRM>
+    <cidadeFederativa>SP</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abf</username>
-    <senha>126</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med4</username>
+    <senha>med4</senha>
     <nome>andre</nome>
     <sobrenome>fonseca</sobrenome>
     <email>a@gmail.com</email>
     <numCRM>12985</numCRM>
+    <cidadeFederativa>DF</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abg</username>
-    <senha>127</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med5</username>
+    <senha>med5</senha>
     <nome>anis</nome>
     <sobrenome>pereira</sobrenome>
     <email>b@gmail.com</email>
     <numCRM>15485</numCRM>
+    <cidadeFederativa>GO</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abh</username>
-    <senha>128</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med6</username>
+    <senha>med6</senha>
     <nome>augusto</nome>
     <sobrenome>dias</sobrenome>
     <email>c@gmail.com</email>
     <numCRM>12458</numCRM>
+    <cidadeFederativa>MG</cidadeFederativa>
     <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abi</username>
-    <senha>129</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med7</username>
+    <senha>med7</senha>
     <nome>antonio</nome>
     <sobrenome>matos</sobrenome>
     <email>d@gmail.com</email>
     <numCRM>13658</numCRM>
+    <cidadeFederativa>BA</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abj</username>
-    <senha>130</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med8</username>
+    <senha>med8</senha>
     <nome>ana</nome>
     <sobrenome>cecilia</sobrenome>
     <email>e@gmail.com</email>
     <numCRM>11458</numCRM>
+    <cidadeFederativa>SP</cidadeFederativa>
     <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abk</username>
-    <senha>131</senha>
-    <nome>bruno</nome>
-    <sobrenome>passos</sobrenome>
-    <email>f@gmail.com</email>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med9</username>
+    <senha>med9</senha>
+    <nome>carol</nome>
+    <sobrenome>reyes</sobrenome>
+    <email>c.r@gmail.com</email>
     <numCRM>11785</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abl</username>
-    <senha>132</senha>
-    <nome>biana</nome>
-    <sobrenome>fonseca</sobrenome>
-    <email>g@gmail.com</email>
-    <numCRM>11425</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abm</username>
-    <senha>133</senha>
-    <nome>beatriz</nome>
-    <sobrenome>oliveira</sobrenome>
-    <email>h@gmail.com</email>
-    <numCRM>12368</numCRM>
+    <cidadeFederativa>BA</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abn</username>
-    <senha>134</senha>
-    <nome>bruna</nome>
-    <sobrenome>toffoli</sobrenome>
-    <email>i@gmail.com</email>
-    <numCRM>12458</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abo</username>
-    <senha>135</senha>
-    <nome>barbara</nome>
-    <sobrenome>streisand</sobrenome>
-    <email>j@gmail.com</email>
-    <numCRM>13254</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abp</username>
-    <senha>136</senha>
-    <nome>cauli</nome>
-    <sobrenome>hansen</sobrenome>
-    <email>k@gmail.com</email>
-    <numCRM>12854</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abq</username>
-    <senha>137</senha>
-    <nome>caio</nome>
-    <sobrenome>almeida</sobrenome>
-    <email>l@gmail.com</email>
-    <numCRM>12658</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abr</username>
-    <senha>138</senha>
-    <nome>castro</nome>
-    <sobrenome>pinto</sobrenome>
-    <email>m@gmail.com</email>
-    <numCRM>12485</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abs</username>
-    <senha>139</senha>
-    <nome>diego</nome>
-    <sobrenome>souza</sobrenome>
-    <email>n@gmail.com</email>
-    <numCRM>12478</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abt</username>
-    <senha>140</senha>
-    <nome>dantas</nome>
-    <sobrenome>aquino</sobrenome>
-    <email>o@gmail.com</email>
-    <numCRM>12457</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abu</username>
-    <senha>141</senha>
-    <nome>dominique</nome>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med10</username>
+    <senha>med10</senha>
+    <nome>richard</nome>
     <sobrenome>pereira</sobrenome>
-    <email>p@gmail.com</email>
-    <numCRM>13652</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>abw</username>
-    <senha>142</senha>
-    <nome>estela</nome>
-    <sobrenome>castanho</sobrenome>
-    <email>q@gmail.com</email>
-    <numCRM>13985</numCRM>
+    <email>ri@gmail.com</email>
+    <numCRM>11786</numCRM>
+    <cidadeFederativa>SP</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abx</username>
-    <senha>143</senha>
-    <nome>enrique
-</nome>
-    <sobrenome>dias</sobrenome>
-    <email>r@gmail.com</email>
-    <numCRM>13548</numCRM>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med11</username>
+    <senha>med11</senha>
+    <nome>gabriel</nome>
+    <sobrenome>li</sobrenome>
+    <email>gab@gmail.com</email>
+    <numCRM>12785</numCRM>
+    <cidadeFederativa>GO</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>aby</username>
-    <senha>144</senha>
-    <nome>fabio</nome>
-    <sobrenome>espinhola</sobrenome>
-    <email>s@gmail.com</email>
-    <numCRM>14585</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>abz</username>
-    <senha>145</senha>
-    <nome>rafaela</nome>
-    <sobrenome>souza</sobrenome>
-    <email>t@gmail.com</email>
-    <numCRM>14789</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>aca</username>
-    <senha>146</senha>
+  </ContaMedico>
+  <ContaMedico>
+    <username>med12</username>
+    <senha>med12</senha>
     <nome>ana</nome>
-    <sobrenome>beatriz</sobrenome>
-    <email>u@gmail.com</email>
-    <numCRM>14256</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acb</username>
-    <senha>147</senha>
-    <nome>beatriz</nome>
-    <sobrenome>martins</sobrenome>
-    <email>w@gmail.com</email>
-    <numCRM>14325</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acc</username>
-    <senha>148</senha>
-    <nome>augusto</nome>
-    <sobrenome>macieira</sobrenome>
-    <email>v@gmail.com</email>
-    <numCRM>12701</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>acd</username>
-    <senha>149</senha>
-    <nome>flavia</nome>
-    <sobrenome>pereira</sobrenome>
-    <email>12@gmail.com</email>
-    <numCRM>12083</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>ace</username>
-    <senha>150</senha>
-    <nome>antonio</nome>
-    <sobrenome>oliveira</sobrenome>
-    <email>13@gmail.com</email>
-    <numCRM>11054</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acf</username>
-    <senha>151</senha>
-    <nome>zeca</nome>
-    <sobrenome>pagodinho</sobrenome>
-    <email>14@gmail.com</email>
-    <numCRM>11087</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acg</username>
-    <senha>152</senha>
-    <nome>tomas</nome>
-    <sobrenome>antonio</sobrenome>
-    <email>15@gmail.com</email>
-    <numCRM>12014</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>ach</username>
-    <senha>153</senha>
-    <nome>antonio</nome>
-    <sobrenome>tomas</sobrenome>
-    <email>16@gmail.com</email>
-    <numCRM>12036</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>aci</username>
-    <senha>154</senha>
-    <nome>augusto</nome>
-    <sobrenome>filho</sobrenome>
-    <email>17@gmail.com</email>
-    <numCRM>11258</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>acj</username>
-    <senha>155</senha>
-    <nome>caio</nome>
-    <sobrenome>dantas</sobrenome>
-    <email>18@gmail.com</email>
-    <numCRM>11054</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>ack</username>
-    <senha>156</senha>
-    <nome>diego</nome>
-    <sobrenome>de souza</sobrenome>
-    <email>19@gmail.com</email>
-    <numCRM>12037</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acl</username>
-    <senha>157</senha>
-    <nome>pedro</nome>
-    <sobrenome>oliveira</sobrenome>
-    <email>20@gmail.com</email>
-    <numCRM>12085</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>acm</username>
-    <senha>158</senha>
-    <nome>junior</nome>
-    <sobrenome>dantas</sobrenome>
-    <email>21@gmail.com</email>
-    <numCRM>11478</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acn</username>
-    <senha>159</senha>
-    <nome>hugo</nome>
-    <sobrenome>pinto</sobrenome>
-    <email>22@gmail.com</email>
-    <numCRM>11365</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>aco</username>
-    <senha>160</senha>
-    <nome>heitor</nome>
-    <sobrenome>espinhola</sobrenome>
-    <email>23@gmail.com</email>
-    <numCRM>11025</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>acp</username>
-    <senha>161</senha>
-    <nome>renata</nome>
-    <sobrenome>pereira</sobrenome>
-    <email>24@gmail.com</email>
-    <numCRM>11789</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acq</username>
-    <senha>162</senha>
-    <nome>luciana</nome>
-    <sobrenome>oliveira</sobrenome>
-    <email>25@gmail.com</email>
-    <numCRM>12854</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acr</username>
-    <senha>163</senha>
-    <nome>estela</nome>
-    <sobrenome>souza</sobrenome>
-    <email>26@gmail.com</email>
-    <numCRM>12658</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acs</username>
-    <senha>164</senha>
-    <nome>junior</nome>
-    <sobrenome>antonio</sobrenome>
-    <email>27@gmail.com</email>
-    <numCRM>12654</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>act</username>
-    <senha>165</senha>
-    <nome>andre</nome>
-    <sobrenome>tomas</sobrenome>
-    <email>abc@gmail.com</email>
-    <numCRM>12765</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acu</username>
-    <senha>166</senha>
-    <nome>pedro</nome>
-    <sobrenome>de souza</sobrenome>
-    <email>abd@gmail.com</email>
-    <numCRM>11765</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acv</username>
-    <senha>167</senha>
-    <nome>augusto</nome>
-    <sobrenome>oliveira</sobrenome>
-    <email>abe@gmail.com</email>
-    <numCRM>13765</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acw</username>
-    <senha>168</senha>
-    <nome>bianca</nome>
-    <sobrenome>sanz</sobrenome>
-    <email>abf@gmail.com</email>
-    <numCRM>14765</numCRM>
-    <situacao>E</situacao>
-  </Medico>
-  <Medico>
-    <username>acx</username>
-    <senha>169</senha>
-    <nome>beatriz</nome>
-    <sobrenome>oliva</sobrenome>
-    <email>abh@gmail.com</email>
-    <numCRM>11025</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>acy</username>
-    <senha>170</senha>
-    <nome>pedro</nome>
     <sobrenome>matos</sobrenome>
-    <email>bac@gmail.com</email>
-    <numCRM>11965</numCRM>
+    <email>a.matos@gmail.com</email>
+    <numCRM>13485</numCRM>
+    <cidadeFederativa>BA</cidadeFederativa>
     <situacao>A</situacao>
-  </Medico>
-  <Medico>
-    <username>acz</username>
-    <senha>171</senha>
-    <nome>antonio</nome>
-    <sobrenome>pinto</sobrenome>
-    <email>xaf@gmail.com</email>
-    <numCRM>11324</numCRM>
-    <situacao>A</situacao>
-  </Medico>
-</ContaMedico>
+  </ContaMedico>
+</ContasMedico>

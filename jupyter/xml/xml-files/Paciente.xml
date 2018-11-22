@@ -1,163 +1,419 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Pacientes>
   <Paciente>
-    <id>1</id>
+    <id>med1P1</id>
     <tipo>A</tipo>
-    <altura(cm)>178</altura(cm)>
-    <peso(kg)>65</peso(kg)>
+    <altura>178</altura>
+    <peso>65</peso>
     <sexo>M</sexo>
     <idade>50</idade>
   </Paciente>
   <Paciente>
-    <id>2</id>
+    <id>med1P2</id>
     <tipo>A</tipo>
-    <altura(cm)>169</altura(cm)>
-    <peso(kg)>84</peso(kg)>
+    <altura>169</altura>
+    <peso>84</peso>
     <sexo>M</sexo>
     <idade>46</idade>
   </Paciente>
   <Paciente>
-    <id>3</id>
+    <id>med1P3</id>
     <tipo>C</tipo>
-    <altura(cm)>98</altura(cm)>
-    <peso(kg)>52</peso(kg)>
+    <altura>98</altura>
+    <peso>52</peso>
     <sexo>F</sexo>
     <idade>8</idade>
   </Paciente>
   <Paciente>
-    <id>4</id>
+    <id>med1P4</id>
     <tipo>C</tipo>
-    <altura(cm)>100</altura(cm)>
-    <peso(kg)>45</peso(kg)>
+    <altura>100</altura>
+    <peso>45</peso>
     <sexo>M</sexo>
     <idade>6</idade>
   </Paciente>
   <Paciente>
-    <id>5</id>
+    <id>med2P1</id>
     <tipo>I</tipo>
-    <altura(cm)>160</altura(cm)>
-    <peso(kg)>90</peso(kg)>
+    <altura>160</altura>
+    <peso>90</peso>
     <sexo>F</sexo>
     <idade>72</idade>
   </Paciente>
   <Paciente>
-    <id>6</id>
+    <id>med2P2</id>
     <tipo>I</tipo>
-    <altura(cm)>168</altura(cm)>
-    <peso(kg)>85</peso(kg)>
+    <altura>168</altura>
+    <peso>85</peso>
     <sexo>F</sexo>
     <idade>68</idade>
   </Paciente>
   <Paciente>
-    <id>7</id>
-    <tipo>a</tipo>
-    <altura(cm)>170</altura(cm)>
-    <peso(kg)>64</peso(kg)>
+    <id>med2P3</id>
+    <tipo>A</tipo>
+    <altura>170</altura>
+    <peso>64</peso>
     <sexo>F</sexo>
     <idade>15</idade>
   </Paciente>
   <Paciente>
-    <id>8</id>
-    <tipo>a</tipo>
-    <altura(cm)>178</altura(cm)>
-    <peso(kg)>70</peso(kg)>
+    <id>med3P1</id>
+    <tipo>A</tipo>
+    <altura>178</altura>
+    <peso>70</peso>
     <sexo>M</sexo>
     <idade>14</idade>
   </Paciente>
   <Paciente>
-    <id>9</id>
+    <id>med4P1</id>
     <tipo>A</tipo>
-    <altura(cm)>192</altura(cm)>
-    <peso(kg)>99</peso(kg)>
+    <altura>192</altura>
+    <peso>99</peso>
     <sexo>M</sexo>
     <idade>35</idade>
   </Paciente>
   <Paciente>
-    <id>10</id>
-    <tipo>C</tipo>
-    <altura(cm)>90</altura(cm)>
-    <peso(kg)>60</peso(kg)>
+    <id>med4P2</id>
+    <tipo>A</tipo>
+    <altura>170</altura>
+    <peso>70</peso>
     <sexo>M</sexo>
-    <idade>9</idade>
+    <idade>32</idade>
   </Paciente>
   <Paciente>
-    <id>11</id>
-    <tipo>I</tipo>
-    <altura(cm)>165</altura(cm)>
-    <peso(kg)>80</peso(kg)>
-    <sexo>F</sexo>
-    <idade>90</idade>
-  </Paciente>
-  <Paciente>
-    <id>12</id>
-    <tipo>a</tipo>
-    <altura(cm)>164</altura(cm)>
-    <peso(kg)>67</peso(kg)>
-    <sexo>F</sexo>
-    <idade>12</idade>
-  </Paciente>
-  <Paciente>
-    <id>13</id>
-    <tipo>I</tipo>
-    <altura(cm)>162</altura(cm)>
-    <peso(kg)>83</peso(kg)>
+    <id>med4P3</id>
+    <tipo>A</tipo>
+    <altura>161</altura>
+    <peso>60</peso>
     <sexo>M</sexo>
-    <idade>98</idade>
+    <idade>18</idade>
   </Paciente>
   <Paciente>
-    <id>14</id>
+    <id>med4P4</id>
+    <tipo>A</tipo>
+    <altura>164</altura>
+    <peso>67</peso>
+    <sexo>F</sexo>
+    <idade>30</idade>
+  </Paciente>
+  <Paciente>
+    <id>med4P5</id>
+    <tipo>I</tipo>
+    <altura>162</altura>
+    <peso>83</peso>
+    <sexo>M</sexo>
+    <idade>79</idade>
+  </Paciente>
+  <Paciente>
+    <id>med5P1</id>
     <tipo>C</tipo>
-    <altura(cm)>101</altura(cm)>
-    <peso(kg)>50</peso(kg)>
+    <altura>101</altura>
+    <peso>50</peso>
     <sexo>F</sexo>
     <idade>10</idade>
   </Paciente>
   <Paciente>
-    <id>15</id>
+    <id>med5P2</id>
     <tipo>A</tipo>
-    <altura(cm)>180</altura(cm)>
-    <peso(kg)>90</peso(kg)>
+    <altura>180</altura>
+    <peso>90</peso>
     <sexo>F</sexo>
     <idade>20</idade>
   </Paciente>
   <Paciente>
-    <id>16</id>
+    <id>med6P1</id>
     <tipo>A</tipo>
-    <altura(cm)>173</altura(cm)>
-    <peso(kg)>84</peso(kg)>
+    <altura>173</altura>
+    <peso>84</peso>
     <sexo>M</sexo>
     <idade>30</idade>
   </Paciente>
   <Paciente>
-    <id>17</id>
+    <id>med6P2</id>
     <tipo>I</tipo>
-    <altura(cm)>161</altura(cm)>
-    <peso(kg)>82</peso(kg)>
+    <altura>161</altura>
+    <peso>82</peso>
     <sexo>F</sexo>
     <idade>70</idade>
   </Paciente>
   <Paciente>
-    <id>18</id>
-    <tipo>a</tipo>
-    <altura(cm)>160</altura(cm)>
-    <peso(kg)>64</peso(kg)>
+    <id>med6P3</id>
+    <tipo>A</tipo>
+    <altura>160</altura>
+    <peso>64</peso>
     <sexo>F</sexo>
-    <idade>16</idade>
+    <idade>35</idade>
   </Paciente>
   <Paciente>
-    <id>19</id>
-    <tipo>a</tipo>
-    <altura(cm)>167</altura(cm)>
-    <peso(kg)>69</peso(kg)>
+    <id>med6P4</id>
+    <tipo>A</tipo>
+    <altura>167</altura>
+    <peso>69</peso>
     <sexo>M</sexo>
     <idade>17</idade>
   </Paciente>
   <Paciente>
-    <id>20</id>
+    <id>med6P5</id>
     <tipo>A</tipo>
-    <altura(cm)>197</altura(cm)>
-    <peso(kg)>99</peso(kg)>
+    <altura>197</altura>
+    <peso>99</peso>
     <sexo>M</sexo>
     <idade>36</idade>
+  </Paciente>
+  <Paciente>
+    <id>med6P6</id>
+    <tipo>C</tipo>
+    <altura>110</altura>
+    <peso>30</peso>
+    <sexo>M</sexo>
+    <idade>5</idade>
+  </Paciente>
+  <Paciente>
+    <id>med6P7</id>
+    <tipo>A</tipo>
+    <altura>175</altura>
+    <peso>75</peso>
+    <sexo>F</sexo>
+    <idade>42</idade>
+  </Paciente>
+  <Paciente>
+    <id>med7P1</id>
+    <tipo>A</tipo>
+    <altura>176</altura>
+    <peso>75</peso>
+    <sexo>M</sexo>
+    <idade>41</idade>
+  </Paciente>
+  <Paciente>
+    <id>med7P2</id>
+    <tipo>C</tipo>
+    <altura>110</altura>
+    <peso>51</peso>
+    <sexo>M</sexo>
+    <idade>10</idade>
+  </Paciente>
+  <Paciente>
+    <id>med7P3</id>
+    <tipo>A</tipo>
+    <altura>171</altura>
+    <peso>65</peso>
+    <sexo>M</sexo>
+    <idade>45</idade>
+  </Paciente>
+  <Paciente>
+    <id>med7P4</id>
+    <tipo>A</tipo>
+    <altura>172</altura>
+    <peso>72</peso>
+    <sexo>M</sexo>
+    <idade>29</idade>
+  </Paciente>
+  <Paciente>
+    <id>med7P5</id>
+    <tipo>A</tipo>
+    <altura>178</altura>
+    <peso>75</peso>
+    <sexo>F</sexo>
+    <idade>25</idade>
+  </Paciente>
+  <Paciente>
+    <id>med7P6</id>
+    <tipo>A</tipo>
+    <altura>170</altura>
+    <peso>75</peso>
+    <sexo>M</sexo>
+    <idade>22</idade>
+  </Paciente>
+  <Paciente>
+    <id>med7P7</id>
+    <tipo>A</tipo>
+    <altura>160</altura>
+    <peso>72</peso>
+    <sexo>M</sexo>
+    <idade>35</idade>
+  </Paciente>
+  <Paciente>
+    <id>med8P1</id>
+    <tipo>C</tipo>
+    <altura>90</altura>
+    <peso>26</peso>
+    <sexo>F</sexo>
+    <idade>4</idade>
+  </Paciente>
+  <Paciente>
+    <id>med8P2</id>
+    <tipo>A</tipo>
+    <altura>159</altura>
+    <peso>60</peso>
+    <sexo>F</sexo>
+    <idade>16</idade>
+  </Paciente>
+  <Paciente>
+    <id>med8P3</id>
+    <tipo>C</tipo>
+    <altura>98</altura>
+    <peso>52</peso>
+    <sexo>M</sexo>
+    <idade>7</idade>
+  </Paciente>
+  <Paciente>
+    <id>med8P4</id>
+    <tipo>A</tipo>
+    <altura>173</altura>
+    <peso>70</peso>
+    <sexo>F</sexo>
+    <idade>36</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P1</id>
+    <tipo>A</tipo>
+    <altura>164</altura>
+    <peso>65</peso>
+    <sexo>F</sexo>
+    <idade>41</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P2</id>
+    <tipo>A</tipo>
+    <altura>163</altura>
+    <peso>72</peso>
+    <sexo>M</sexo>
+    <idade>48</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P3</id>
+    <tipo>I</tipo>
+    <altura>179</altura>
+    <peso>75</peso>
+    <sexo>F</sexo>
+    <idade>79</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P4</id>
+    <tipo>A</tipo>
+    <altura>165</altura>
+    <peso>65</peso>
+    <sexo>M</sexo>
+    <idade>41</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P5</id>
+    <tipo>A</tipo>
+    <altura>159</altura>
+    <peso>60</peso>
+    <sexo>F</sexo>
+    <idade>39</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P6</id>
+    <tipo>A</tipo>
+    <altura>167</altura>
+    <peso>78</peso>
+    <sexo>M</sexo>
+    <idade>43</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P7</id>
+    <tipo>I</tipo>
+    <altura>160</altura>
+    <peso>59</peso>
+    <sexo>M</sexo>
+    <idade>70</idade>
+  </Paciente>
+  <Paciente>
+    <id>med9P8</id>
+    <tipo>A</tipo>
+    <altura>163</altura>
+    <peso>63</peso>
+    <sexo>F</sexo>
+    <idade>36</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P1</id>
+    <tipo>I</tipo>
+    <altura>170</altura>
+    <peso>70</peso>
+    <sexo>M</sexo>
+    <idade>71</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P2</id>
+    <tipo>I</tipo>
+    <altura>171</altura>
+    <peso>62</peso>
+    <sexo>F</sexo>
+    <idade>80</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P3</id>
+    <tipo>I</tipo>
+    <altura>170</altura>
+    <peso>72</peso>
+    <sexo>M</sexo>
+    <idade>75</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P4</id>
+    <tipo>A</tipo>
+    <altura>164</altura>
+    <peso>69</peso>
+    <sexo>M</sexo>
+    <idade>38</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P5</id>
+    <tipo>A</tipo>
+    <altura>166</altura>
+    <peso>68</peso>
+    <sexo>M</sexo>
+    <idade>39</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P6</id>
+    <tipo>I</tipo>
+    <altura>178</altura>
+    <peso>73</peso>
+    <sexo>F</sexo>
+    <idade>69</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P7</id>
+    <tipo>I</tipo>
+    <altura>190</altura>
+    <peso>90</peso>
+    <sexo>M</sexo>
+    <idade>79</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P8</id>
+    <tipo>I</tipo>
+    <altura>178</altura>
+    <peso>75</peso>
+    <sexo>F</sexo>
+    <idade>70</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P9</id>
+    <tipo>I</tipo>
+    <altura>178</altura>
+    <peso>79</peso>
+    <sexo>M</sexo>
+    <idade>69</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P10</id>
+    <tipo>A</tipo>
+    <altura>162</altura>
+    <peso>63</peso>
+    <sexo>M</sexo>
+    <idade>40</idade>
+  </Paciente>
+  <Paciente>
+    <id>med10P11</id>
+    <tipo>A</tipo>
+    <altura>164</altura>
+    <peso>65</peso>
+    <sexo>F</sexo>
+    <idade>41</idade>
   </Paciente>
 </Pacientes>

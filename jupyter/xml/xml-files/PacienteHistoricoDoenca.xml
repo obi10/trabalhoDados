@@ -1,83 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PacienteHistoricoDoencas>
-  <PacienteHistoricoDoenca>
-    <idPaciente>1</idPaciente>
-    <idDoenca>5</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>2</idPaciente>
-    <idDoenca>2</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>3</idPaciente>
-    <idDoenca>18</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>4</idPaciente>
-    <idDoenca>6</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>5</idPaciente>
-    <idDoenca>10</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>6</idPaciente>
-    <idDoenca>9</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>7</idPaciente>
-    <idDoenca>7</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>8</idPaciente>
-    <idDoenca>5</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>9</idPaciente>
-    <idDoenca>1</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>10</idPaciente>
-    <idDoenca>3</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>11</idPaciente>
-    <idDoenca>14</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>12</idPaciente>
-    <idDoenca>17</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>13</idPaciente>
-    <idDoenca>2</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>14</idPaciente>
-    <idDoenca>9</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>15</idPaciente>
-    <idDoenca>3</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>16</idPaciente>
-    <idDoenca>8</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>17</idPaciente>
-    <idDoenca>18</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>18</idPaciente>
-    <idDoenca>12</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>19</idPaciente>
-    <idDoenca>10</idDoenca>
-  </PacienteHistoricoDoenca>
-  <PacienteHistoricoDoenca>
-    <idPaciente>20</idPaciente>
-    <idDoenca>11</idDoenca>
-  </PacienteHistoricoDoenca>
+  <Paciente id="med1P1" idDoenca="D1">
+  </Paciente>
+  <Paciente id="med2P3" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med3P1" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med4P2" idDoenca="D2">
+  </Paciente>
+  <Paciente id="med4P4" idDoenca="D2">
+  </Paciente>
+  <Paciente id="med4P5" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med5P2" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med6P1" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med6P3" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med6P4" idDoenca="D3">
+  </Paciente>
+  <Paciente id="med6P5" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med6P7" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med7P1" idDoenca="D3">
+  </Paciente>
+  <Paciente id="med7P4" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med7P5" idDoenca="D2">
+  </Paciente>
+  <Paciente id="med7P6" idDoenca="D3">
+  </Paciente>
+  <Paciente id="med7P7" idDoenca="D2">
+  </Paciente>
+  <Paciente id="med8P4" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med9P1" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med9P2" idDoenca="D1">
+  </Paciente>
+  <Paciente id="med9P3" idDoenca="D3">
+  </Paciente>
+  <Paciente id="med9P4" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med9P5" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med9P6" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med9P7" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med9P8" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P1" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P2" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P3" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P4" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P5" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P6" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P7" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P8" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P9" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P10" idDoenca="D5">
+  </Paciente>
+  <Paciente id="med10P11" idDoenca="D5">
+  </Paciente>
 </PacienteHistoricoDoencas>
