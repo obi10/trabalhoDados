@@ -1,0 +1,15 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix meshv: <http://id.nlm.nih.gov/mesh/vocab#> .
+@prefix mesh: <http://id.nlm.nih.gov/mesh/> .
+@prefix mesh2015: <http://id.nlm.nih.gov/mesh/2015/> .
+@prefix mesh2016: <http://id.nlm.nih.gov/mesh/2016/> .
+@prefix mesh2017: <http://id.nlm.nih.gov/mesh/2017/> .
+
+mesh:Q000009 rdfs:label "adverse effects"@en .
+mesh:Q000009 meshv:annotation "Hypertension"@en .
+mesh:Q000009 meshv:annotation "High Blood Pressure"@en .
+
+mesh:D054199 meshv:allowableQualifier mesh:Q000009 .

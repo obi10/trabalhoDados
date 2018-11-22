@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix meshv: <http://id.nlm.nih.gov/mesh/vocab#> .
+@prefix mesh: <http://id.nlm.nih.gov/mesh/> .
+@prefix mesh2015: <http://id.nlm.nih.gov/mesh/2015/> .
+@prefix mesh2016: <http://id.nlm.nih.gov/mesh/2016/> .
+@prefix mesh2017: <http://id.nlm.nih.gov/mesh/2017/> .
+
+meshv:apreDosagem rdf:type owl:DatatypeProperty ;
+		  rdfs:label "apreDosagem" .
+
+meshv:dosisMg rdf:type owl:cardinality ;
+		  rdfs:label "dosisMg" .
+
+meshv:numVezesDia rdf:type owl:cardinality ;
+		  rdfs:label "numVezesDia" .
+
+meshv:numDias rdf:type owl:cardinality ;
+		  rdfs:label "numDias" .
+
+mesh:Q000008 rdfs:label "administration & dosage"@en ;
+             meshv:apreDosagem "Comprimidos"@en ;
+             meshv:dosisMg "10"^^xsd:integer ;
+             meshv:numVezesDia "1"^^xsd:integer ;
+             meshv:numDias "5"^^xsd:integer .
+
+mesh:D017332 meshv:allowableQualifier mesh:Q000008 .
